@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amino hotel</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="./css/bootstrap-reboot.css.map" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css.map" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css.map" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Header section start -->
+    <div class="header-section">
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">Amino Hotel</a>
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link" href="rooms.html">Rooms</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+
+        <div class="header-right">
+                   <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">log in</button>
+
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+       <!-- Default form login -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Sign in</p>
+
+    <!-- Email -->
+    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Password -->
+    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+    <div class="d-flex justify-content-around">
+        <div>
+            <!-- Remember me -->
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+            </div>
+        </div>
+        <div>
+            <!-- Forgot password -->
+            <a href="">Forgot password?</a>
+        </div>
+    </div>
+
+    <!-- Sign in button -->
+    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+    <!-- Register -->
+    <p>Not a member?
+        <a href="">Register</a>
+    </p>
+
+
+</form>
+<!-- Default form login --></div> 
+  </div>
+</div>
+
+   <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">sign up</button>
+        
+     <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+         
+          <!-- Default form register -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Sign up</p>
+
+    <div class="form-row mb-4">
+        <div class="col">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+            <!-- Last name -->
+            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+        </div>
+    </div>
+
+    <!-- E-mail -->
+    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Password -->
+    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+        At least 8 characters and 1 digit
+    </small>
+
+    <!-- Phone number -->
+    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+        Optional - for two step authentication
+    </small>
+
+    <!-- Newsletter -->
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+    </div>
+
+    <!-- Sign up button -->
+    <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+
+
+    <hr>
+
+</form>
+<!-- Default form register -->
+                  
+      </div>
+     
+    </div> 
+  </div>
+</div>   
+    
+</div>
+      </nav>
+    </div>
+
+      <section class="top-about">
+<img src="img/about.png">
+<h1 class="text-center">Services</h1>
+      </section>
+
+       <section class="booking-section card p-3">
+         <div class="container d-flex align-items-center" id="booking">
+        <div action="post" class=" form-inline w-100 form-book justify-content-between">
+          <div class="form-check">
+        
+              <label for="datein" class="col-form-label mr-3"><span class="booking-info">Date In</span></label>
+            
+      
+              <input type="date" name="datein" id="datein" class="form-control booking-input mr-3" placeholder="">
+            
+          
+              <label for="dateout" class="col-form-label mr-3"><span class="booking-info">Date Out</span></label>
+            
+         
+                <input type="date" name="dateout" id="dateout" class="form-control mr-3 booking-input" placeholder="">
+            
+           
+              <label for="adult" class="col-form-label mr-3"><span class="booking-info">Adults</span></label>
+                <select class="form-control mr-3 booking-input" id="adult">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+
+                 <label for="children" class="col-form-label mr-3"><span class="booking-info">Children</span></label>
+                <select class="form-control mr-3 booking-input" id="children">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+
+                <label for="room" class="col-form-label mr-3"><span class="booking-info">Rooms</span></label>
+                <select class="form-control mr-3 booking-input" id="room">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+               </div>
+              </div>
+          </form>
+       </div>
+       <div class="d-flex justify-content-center">
+            <a href="contact.html" class="btn btn-primary btn-lg">Book now</a>
+       </div>
+         
+   </section>
+     
+
+
+    <!-- Header section end -->
+
+    <!-- services section start -->
+    <section class="description-section">
+       <div class="container-fluid p-5">
+        <h1 class="text-center pb-5">Our services</h1>
+        <div class="row">
+          <div class="col-md-5 services-img p-3">
+            <img src="/home/amine/Desktop/Hotel/img/hotel-restaurant.jpg" alt="">
+          </div>
+          <div class="col-md-7 services-description">
+            <div class="text-center">
+             <h1 class="p-5">Our restaurant</h1>
+            <span class="p-2">Dining & Drinks</span>
+            <p class="p-3" >During the summer, outdoor dining at the Restaurant L’Amour dans le Four is a true pleasure. Our restaurant’s culinary style is further enhanced by the mild climate and relaxing outdoor atmosphere at the Hotel Anis: an ample terrace shaded by a large ficus and overlooking and overlooking a garden enveloped by a thousand different fragrances.</p>
+            </div>
+          </div>
+        </div>
+         <div class="row">
+           <div class="col-md-7 services-description">
+            <div class="text-center">
+             <h1 class="p-5">Our pool</h1>
+            <span class="p-2">Pool</span>
+            <p class="p-3">You don’t need to be a luxury mega-resort to have a swimming pool with a world-class view. Case in point is this little boutique spot nestled up in the mountains around Lake Atitlan. The infinity pool at the 15-guest resort sits over the water like one might at a villa on Lake Como, at a fraction of the price. So if you find yourself in Central America, make a point to take a refreshing dip here.</p>
+            </div>
+          </div>
+          <div class="col-md-5 services-img p-5">
+            <img src="/home/amine/Desktop/Hotel/img/pool.png" alt="">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+     
+
+    <!-- services section end -->
+
+     <!-- Feedbacks section start -->
+     
+    <section class="blog-section">
+        <div class="container">
+  <h1 class="text-center mb-3">Customers feedbacks</h1>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner row w-100 mx-auto">
+      <div class="carousel-item col-md-12 active">
+        <div class="card-img">
+          <div class="d-flex justify-content-center">
+            <img class="card-img-top customer" src="/home/amine/Desktop/Hotel/img/comment_1.png" alt="">          
+          </div>
+          <div class="card-body">
+            <h4 class="card-title text-center">Michel Escobar</h4>
+            <p class="card-text text-center">"We stayed at Amino Hotel  on our trip to Helsinki and it was great. Location was perfect for walking to everything! Staff was helpful and breakfast was great. Room was perfect for my daughter and myself. The only thing was our room faced the main road and the traffic was noisy all night. Would definite stay here again!" </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-12">
+         <div class="card-img">
+          <div class="d-flex justify-content-center">
+            <img class="card-img-top customer" src="/home/amine/Desktop/Hotel/img/comment_2.png" alt="">          
+          </div>
+          <div class="card-body">
+            <h4 class="card-title text-center">Georges Hugo</h4>
+            <p class="card-text text-center">"The hotel located in the city center and lots of public transport, nearby restaurants, bars etc. The hotel staff are nice and friendly. Breakfast not bad. The room a bit small but the bed is really comfortable." </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item col-md-12">
+        <div class="card-img">
+           <div class="card-img">
+          <div class="d-flex justify-content-center">
+            <img class="card-img-top customer" src="/home/amine/Desktop/Hotel/img/comment_3.png" alt="">          
+          </div>
+          <div class="card-body">
+            <h4 class="card-title text-center">Cristian Colombo</h4>
+            <p class="card-text text-center">""Good relaxing break! Friendly, welcoming staff. Very good location for city centre and local transport. Overall an enjoyable stay. The hotel is old and could do with some renovation, but it seems like this issue is being addressed." </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    </section>
+        <!-- Feedbacks section end -->
+
+        <!-- blog section start -->
+<section class="description-section">
+     <div class="container">
+            <div class="row blog">
+                <div class="col-md-12">
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#blogCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="/home/amine/Desktop/Hotel/img/blog-1.png" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="/home/amine/Desktop/Hotel/img/blog-2.png" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="/home/amine/Desktop/Hotel/img/blog-3.png" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="/home/amine/Desktop/Hotel/img/blog-4.png" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="/home/amine/Desktop/Hotel/img/blog-5.png" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="/home/amine/Desktop/Hotel/img/blog-1.png" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="/home/amine/Desktop/Hotel/img/blog-2.png" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="/home/amine/Desktop/Hotel/img/blog-3.png" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+            </div>
+</div>
+
+</section>
+
+        <!-- blog section end -->
+
+  
+    <!-- Footer section start -->
+    <footer class="footer">
+      <div class="footer-top">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="footer-widget">
+                          <h3 class="footer-title">
+                              Address
+                          </h3>
+                          <p class="footer-text"> 200, Green road, Mongla, <br>
+                              New Yor City USA</p>
+                          <a  class="footer-link" href="https://www.google.fr/maps/place/Hotel+Pennsylvania/@40.7499745,-73.9931965,17z/data=!4m18!1m9!3m8!1s0x89c259aef28db459:0xc8cb71ead274b3a4!2sHotel+Pennsylvania!5m2!4m1!1i2!8m2!3d40.7499745!4d-73.9910078!3m7!1s0x89c259aef28db459:0xc8cb71ead274b3a4!5m2!4m1!1i2!8m2!3d40.7499745!4d-73.9910078" target="_blank" class="line-button">Get Direction</a>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="footer-widget">
+                          <h3 class="footer-title">
+                              Reservation
+                          </h3>
+                          <p class="footer-text">+10 367 267 2678 <br>
+                              reservation@montana.com</p>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="footer-widget">
+                          <h3 class="footer-title">
+                              Navigation
+                          </h3>
+                          <dl>
+                              <dd><a  class="footer-link" href="home.html">Home</a></dd>
+                              <dd><a class="footer-link" href="rooms.html">Rooms</a></dd>
+                              <dd><a class="footer-link" href="services.html">Services</a></dd>
+                              <dd><a class="footer-link" href="contact.html">Contact</a></dd>
+                          </dl>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="footer-widget">
+                          <h3 class="footer-title">
+                              Newsletter
+                          </h3>
+                          <div class="content">
+                            <form>
+                               
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Your email">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="submit">Subscribe Now</button>
+                                    </span>
+          
+                                    <p class="footer-subscribe-text">Sucscribe to our newsletter<p>
+                                </div>
+                            </form>
+                        </div>
+                            </div>
+                            <div class="container-fluid text-center">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <a href="https://fr-fr.facebook.com/" target="_blank">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                </div>
+                                <div class="col-md-4">
+                                  <a href="https://twitter.com/?lang=fr" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                </div>
+                                <div class="col-md-4">
+                                  <a href="https://www.instagram.com/?hl=fr" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                </div>
+                              </div>
+                            </div>
+                           
+
+                          </div>
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copy-right-text">
+        <div class="footer-border"></div>
+            <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="copy-right">
+                2020 All rights reserved  <i class="fa fa-heart-o" aria-hidden="true"></i> by Amino
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer section end -->
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.js.map"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js.map"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js.map"></script>
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

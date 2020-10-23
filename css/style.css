@@ -1,0 +1,275 @@
+body {
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+
+/*----------------------------------------*/
+/* Home page
+/*----------------------------------------*/
+
+.big-img {
+  width: 480px;
+  height: 300px;
+}
+
+.little-img {
+  width: 250px;
+  height: 270px;
+}
+
+.little-img-1 {
+  width: 240px;
+  height: 400px;
+}
+
+.big-img-1 {
+  width: 490px;
+  height: 350px;
+  position: relative;
+  top: 50px;
+}
+
+#booking {
+  min-height: 6.5rem;
+  width: fit-content;
+  padding: 0 10%;
+}
+
+.blog-section {
+  background-color: slategray;
+}
+
+.card-info {
+  box-shadow: black;
+  border: black;
+}
+/*----------------------------------------*/
+/* about page
+/*----------------------------------------*/
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.top-about h1 {
+  position: relative;
+  bottom: 300px;
+  z-index: 1;
+  color: white;
+}
+
+.description-section {
+  background-color: mediumaquamarine;
+}
+
+/*----------------------------------------*/
+/* Nav
+/*----------------------------------------*/
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+/*----------------------------------------*/
+/* footer
+/*----------------------------------------*/
+
+.footer {
+  background-color: black;
+}
+
+.footer-widget {
+  padding: 20px 0 20px 0;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer-title {
+  padding-bottom: 20px;
+}
+
+.footer-link,
+.footer-text {
+  text-decoration: none;
+  color: #bababa;
+}
+
+.footer-link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.footer-subscribe-text {
+  padding-top: 20px;
+  color: #bababa;
+}
+
+.top-about h1 {
+  position: relative;
+  bottom: 300px;
+  z-index: 1;
+  color: white;
+}
+
+/*----------------------------------------*/
+/* rooms page
+/*----------------------------------------*/
+
+.img-room {
+  height: 400px;
+  width: max-content;
+}
+
+.top-room h1 {
+  position: relative;
+  bottom: 220px;
+  z-index: 1;
+  color: white;
+}
+
+.book-now {
+  display: inline-block;
+  font-size: 14px;
+  color: #009dff;
+  border: 1px solid #009dff;
+  text-transform: capitalize;
+  padding: 10px 25px;
+  width: 100%;
+}
+.superior-room {
+  background-image: url(/home/amine/Desktop/Hotel/img/superior-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: max-content;
+}
+
+.deluxe-room {
+  background-image: url(/home/amine/Desktop/Hotel/img/deluxe-room.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: max-content;
+}
+
+.signature-room {
+  background-image: url(/home/amine/Desktop/Hotel/img/signature-room.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: max-content;
+}
+
+.couple-room {
+  background-image: url(/home/amine/Desktop/Hotel/img/couple-room.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.price-room {
+
+  text-decoration: underline;
+  position: relative;
+  top:50px;
+}
+
+
+
+.services-top {
+  background-image: url(/home/amine/Desktop/Hotel/img/services-top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  height: 60px;
+  padding: 10px 29px;
+  border: none;
+  background: #edf3f5;
+  margin-bottom: 19px;
+  font-style: italic;
+  font-size: 16px;
+  color: #242424;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 164px;
+  padding: 24px 29px 10px;
+  margin-bottom: 30px;
+}
+
+.contact-form .site-btn {
+  padding-left: 350px;
+}
+
+.services-top h1 {
+  position: relative;
+  bottom: 50px;
+  z-index: 1;
+  color: white;
+}
+
+.services-img img {
+  width: 100%;
+}
+.services-description {
+  width: max-content;
+}
+
+.customer {
+  width: 10%;
+}
+
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -40px;
+}
+
+
+.blog .carousel-indicators li {
+  background: #a3a3a3;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.blog .carousel-indicators .active {
+  background: #707070;
+}
+
+.booking-section {
+  background-color : slategray;
+}
+
+.booking-info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+
+}
+
+.booking-input {
+background-color: lightskyblue;
+}
+
+.booking-input:hover {
+transform: scale(1.2);
+}
+
+.contact-adress dl dd span {
+  margin-left: 50px;
+}
+
+
